@@ -20,7 +20,7 @@ class UCCategoriesController : UITableViewController, UISplitViewControllerDeleg
         
         splitViewController!.delegate = self;
         splitViewController!.preferredDisplayMode = UISplitViewControllerDisplayMode.AllVisible;
-        var resultsController = (splitViewController!.viewControllers[1] as UINavigationController).topViewController as UCResultsController;
+        var resultsController = (splitViewController!.viewControllers[1] as! UINavigationController).topViewController as! UCResultsController;
         self.delegate = resultsController;
         
         UCBL.category = UCBL.getCategories()[0];
@@ -75,7 +75,7 @@ class UCCategoriesController : UITableViewController, UISplitViewControllerDeleg
         if (!splitViewController!.collapsed)
         {
             let userInfo = notification.userInfo!
-            let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
+            let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
             let keyboardViewEndFrame = view.convertRect(keyboardScreenEndFrame, fromView: view.window)
             
             var inset = tableView.contentInset;
@@ -99,7 +99,7 @@ class UCCategoriesController : UITableViewController, UISplitViewControllerDeleg
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = data[indexPath.row].description.uppercaseString;
         cell.imageView?.image = UIImage(named: data[indexPath.row].description.lowercaseString);
         return cell
@@ -107,7 +107,7 @@ class UCCategoriesController : UITableViewController, UISplitViewControllerDeleg
     
     //MARK: - Segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller = (segue.destinationViewController as UINavigationController).topViewController as UCResultsController;
+        let controller = (segue.destinationViewController as! UINavigationController).topViewController as! UCResultsController;
         UCBL.category = data[tableView.indexPathForSelectedRow()!.row];
         UCBL.unit = UCBL.category.Units[0];
         UCBL.value = "";

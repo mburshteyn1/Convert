@@ -36,11 +36,11 @@ class UCResultsController: UITableViewController {
         //Load Keyboard
         var array = NSBundle.mainBundle().loadNibNamed("InputView", owner: self, options: nil);
         //Load landscape or portrain keyboard view
-        keyboardView = array[!splitViewController!.collapsed || orientation == UIDeviceOrientation.LandscapeLeft || orientation == UIDeviceOrientation.LandscapeRight ? 0 : 1] as UCInputView;
+        keyboardView = array[!splitViewController!.collapsed || orientation == UIDeviceOrientation.LandscapeLeft || orientation == UIDeviceOrientation.LandscapeRight ? 0 : 1] as! UCInputView;
         keyboardView.delegate = self;
         keyboardView.changeCategory();
         
-        accessoryView = array[2] as UITextField;
+        accessoryView = array[2] as! UITextField;
         accessoryView.frame = CGRectMake(0, 0, 0, idiom == .Pad ? 60 : 44);
         accessoryView.font = UIFont.systemFontOfSize(idiom == .Pad ? 32 : 26, weight: UIFontWeightThin);
         accessoryView.addTarget(self, action: "calculate", forControlEvents: UIControlEvents.EditingChanged);
@@ -66,7 +66,7 @@ class UCResultsController: UITableViewController {
         if (idiom == .Phone)
         {
             var array = NSBundle.mainBundle().loadNibNamed("InputView", owner: self, options: nil);
-            keyboardView = array[toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft || toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight ? 0 : 1] as UCInputView;
+            keyboardView = array[toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft || toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight ? 0 : 1] as! UCInputView;
             keyboardView.delegate = self;
             keyboardView.changeCategory();
             accessoryView.inputView = keyboardView;
@@ -94,7 +94,7 @@ class UCResultsController: UITableViewController {
     func keyboardChange(notification: NSNotification)
     {
         let userInfo = notification.userInfo!
-        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
+        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
         let keyboardViewEndFrame = view.convertRect(keyboardScreenEndFrame, fromView: view.window)
         
         var inset = tableView.contentInset;
@@ -118,13 +118,13 @@ class UCResultsController: UITableViewController {
             formatter.usesGroupingSeparator = true;
             formatter.maximumFractionDigits = 20;
             
-            if (sender.titleLabel!.text? == "." && accessoryView.text.rangeOfString(".") != nil)
+            if (sender.titleLabel!.text == "." && accessoryView.text.rangeOfString(".") != nil)
             { /*Do not add more than one period */ }
-            else if (sender.titleLabel!.text? == ".")
+            else if (sender.titleLabel!.text == ".")
             {
                 accessoryView.insertText(sender.titleLabel!.text!);
             }
-            else if (sender.titleLabel!.text? == "0" && accessoryView.text.rangeOfString(".") != nil)
+            else if (sender.titleLabel!.text == "0" && accessoryView.text.rangeOfString(".") != nil)
             {
                 accessoryView.insertText(sender.titleLabel!.text!);
             }
@@ -166,7 +166,7 @@ class UCResultsController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
         if let unit = data?[indexPath.row]
         {

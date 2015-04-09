@@ -155,7 +155,7 @@ public class UCBL {
     {
         get
         {
-            var index = NSUserDefaults.standardUserDefaults().valueForKey("category") as Int
+            var index = NSUserDefaults.standardUserDefaults().valueForKey("category") as! Int
             return UCBL.getCategories()[index];
         }
         set
@@ -169,7 +169,7 @@ public class UCBL {
     {
         get
         {
-            var index = NSUserDefaults.standardUserDefaults().valueForKey("unit") as Int
+            var index = NSUserDefaults.standardUserDefaults().valueForKey("unit") as! Int
             return UCBL.category.Units[index];
         }
         set
@@ -183,7 +183,7 @@ public class UCBL {
     {
         get
     {
-        return NSUserDefaults.standardUserDefaults().valueForKey("value") as String
+        return NSUserDefaults.standardUserDefaults().valueForKey("value") as! String
         }
         set
     {

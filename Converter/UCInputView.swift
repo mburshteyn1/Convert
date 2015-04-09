@@ -29,7 +29,7 @@ class UCInputView: UIView, UIInputViewAudioFeedback{
         collectionView?.delegate = unitDelegate;
         collectionView?.dataSource = unitDelegate;
         
-        for view in viewInput.subviews as [UIButton]
+        for view in viewInput.subviews as! [UIButton]
         {
             view.layer.borderColor = UIColor(white: 230.0/255.0, alpha: 1).CGColor;
             view.layer.borderWidth = 1/scale;

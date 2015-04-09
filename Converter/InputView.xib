@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D130a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -13,8 +13,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
                     <items/>
                 </toolbar>
-                <pickerView contentMode="scaleToFill" misplaced="YES" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrX-do-8Mr">
-                    <rect key="frame" x="0.0" y="0.0" width="300" height="216"/>
+                <pickerView contentMode="scaleToFill" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrX-do-8Mr">
+                    <rect key="frame" x="0.0" y="72" width="301" height="216"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="140" id="Jbf-7V-GyP"/>
                         <constraint firstAttribute="height" constant="260" id="PhV-nn-Xdt"/>
@@ -28,11 +28,11 @@
                         </mask>
                     </variation>
                 </pickerView>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ki-ue-dYy">
-                    <rect key="frame" x="300" y="0.0" width="300" height="260"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ki-ue-dYy">
+                    <rect key="frame" x="301" y="-1" width="300" height="362"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKA-G2-UO8">
-                            <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKA-G2-UO8">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="90.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="1">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,8 +42,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="GDd-6M-lhR"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7K-l6-5qG">
-                            <rect key="frame" x="200" y="0.0" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7K-l6-5qG">
+                            <rect key="frame" x="200" y="0.0" width="100" height="90.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="3">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,8 +53,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="cir-Bj-Jjk"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fu-IF-VYe">
-                            <rect key="frame" x="100" y="0.0" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fu-IF-VYe">
+                            <rect key="frame" x="100" y="0.0" width="100" height="90.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="2">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,8 +64,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="sdO-D9-qre"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLU-aU-iqw">
-                            <rect key="frame" x="0.0" y="60" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLU-aU-iqw">
+                            <rect key="frame" x="0.0" y="90.5" width="100" height="90.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="4">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,8 +75,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="omW-4B-y6s"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIX-s4-3tI">
-                            <rect key="frame" x="200" y="60" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIX-s4-3tI">
+                            <rect key="frame" x="200" y="90.5" width="100" height="90.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="6">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -86,8 +86,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="k6h-Bt-5Cn"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcT-gz-69u">
-                            <rect key="frame" x="100" y="60" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcT-gz-69u">
+                            <rect key="frame" x="100" y="90.5" width="100" height="90.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="5">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,8 +97,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="7aj-th-Vgc"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Box-XN-Jp2">
-                            <rect key="frame" x="0.0" y="120" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Box-XN-Jp2">
+                            <rect key="frame" x="0.0" y="181" width="100" height="90"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="7">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -108,8 +108,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="zvJ-NN-rwn"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INY-9K-J4a">
-                            <rect key="frame" x="200" y="120" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INY-9K-J4a">
+                            <rect key="frame" x="200" y="181" width="100" height="90"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="9">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,8 +119,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="bGl-2Q-bJA"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-34-ZF6">
-                            <rect key="frame" x="100" y="120" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-34-ZF6">
+                            <rect key="frame" x="100" y="181" width="100" height="90"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="8">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,8 +130,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="ou2-t1-ZB2"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W1-J7-fVD">
-                            <rect key="frame" x="0.0" y="180" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W1-J7-fVD">
+                            <rect key="frame" x="0.0" y="271" width="100" height="90.5"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title=".">
@@ -142,8 +142,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="fVu-TU-OWL"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nD2-cD-s38">
-                            <rect key="frame" x="200" y="180" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nD2-cD-s38">
+                            <rect key="frame" x="200" y="271" width="100" height="90.5"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" image="backspace">
@@ -154,8 +154,8 @@
                                 <action selector="btnKeyboardTap:" destination="G40-Bw-PI8" eventType="touchUpInside" id="dik-9O-I5D"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo8-fb-7DI">
-                            <rect key="frame" x="100" y="180" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo8-fb-7DI">
+                            <rect key="frame" x="100" y="271" width="100" height="90.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="0">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -320,11 +320,11 @@
                         <constraint firstItem="rQl-L1-mWL" firstAttribute="width" secondItem="aSO-z5-oOw" secondAttribute="width" id="gEM-gE-f49"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOF-bQ-7Qh">
-                    <rect key="frame" x="0.0" y="30" width="300" height="260"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOF-bQ-7Qh">
+                    <rect key="frame" x="0.0" y="44" width="600" height="257"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwD-tv-TRC">
-                            <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwD-tv-TRC">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="64.5"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="1">
@@ -334,8 +334,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="7X6-Zn-fE9"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcs-4O-4aa">
-                            <rect key="frame" x="200" y="0.0" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcs-4O-4aa">
+                            <rect key="frame" x="400" y="0.0" width="200" height="64.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="3">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -345,8 +345,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="FYZ-1H-duB"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-cX-fGv">
-                            <rect key="frame" x="100" y="0.0" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-cX-fGv">
+                            <rect key="frame" x="200" y="0.0" width="200" height="64.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="2">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -356,8 +356,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="HkF-e5-FAI"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czb-WI-wZ9">
-                            <rect key="frame" x="0.0" y="60" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czb-WI-wZ9">
+                            <rect key="frame" x="0.0" y="64.5" width="200" height="64"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="4">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -367,8 +367,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="pnx-j1-d4g"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRX-ZM-4gC">
-                            <rect key="frame" x="200" y="60" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRX-ZM-4gC">
+                            <rect key="frame" x="400" y="64.5" width="200" height="64"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="6">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -378,8 +378,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="YWm-NU-ncd"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Iw-iC-z6f">
-                            <rect key="frame" x="100" y="60" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Iw-iC-z6f">
+                            <rect key="frame" x="200" y="64.5" width="200" height="64"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="5">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -389,8 +389,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="Qsm-8m-kZI"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkZ-ZD-ew3">
-                            <rect key="frame" x="0.0" y="120" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkZ-ZD-ew3">
+                            <rect key="frame" x="0.0" y="128.5" width="200" height="64.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="7">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -400,8 +400,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="34R-s7-G82"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-2G-suN">
-                            <rect key="frame" x="200" y="120" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-2G-suN">
+                            <rect key="frame" x="400" y="128.5" width="200" height="64.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="9">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -411,8 +411,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="xxO-dS-yIb"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZz-gk-l1Y">
-                            <rect key="frame" x="100" y="120" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZz-gk-l1Y">
+                            <rect key="frame" x="200" y="128.5" width="200" height="64.5"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="8">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -422,8 +422,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="9AO-sP-zEs"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3j-kn-HmZ">
-                            <rect key="frame" x="0.0" y="180" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3j-kn-HmZ">
+                            <rect key="frame" x="0.0" y="193" width="200" height="64"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title=".">
@@ -434,8 +434,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="c5z-1h-dNe"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mp-wZ-BrE">
-                            <rect key="frame" x="200" y="180" width="100" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mp-wZ-BrE">
+                            <rect key="frame" x="400" y="193" width="200" height="64"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -446,8 +446,8 @@
                                 <action selector="btnKeyboardTap:" destination="4qB-A5-xSY" eventType="touchUpInside" id="ndF-28-xtM"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qs6-EE-gHN">
-                            <rect key="frame" x="100" y="180" width="101" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qs6-EE-gHN">
+                            <rect key="frame" x="200" y="193" width="200" height="64"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                             <state key="normal" title="0">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -619,7 +619,7 @@
             <color key="textColor" red="0.85490196080000003" green="0.3803921569" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-            <point key="canvasLocation" x="233.5" y="629"/>
+            <point key="canvasLocation" x="73.5" y="675"/>
         </textField>
     </objects>
     <resources>

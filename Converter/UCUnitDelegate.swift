@@ -50,8 +50,8 @@ class UCUnitDelegate : NSObject, UIPickerViewDataSource, UIPickerViewDelegate, U
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell;
-        var label = cell.subviews[0].subviews[0] as UILabel;
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! UICollectionViewCell;
+        var label = cell.subviews[0].subviews[0] as! UILabel;
         label.text = "";
         if (indexPath.row > 0 && indexPath.row <= data.count)
         {
